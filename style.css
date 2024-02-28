@@ -375,11 +375,11 @@ padding-bottom: 5rem;
   margin-bottom: 2rem;
   border-spacing: 1rem;
 }
-.education-content .content .title{
+.education-content .content .year{
   font-size: 1.5rem;
   color: var(--main-color);
   padding-bottom: .5rem;
 }
-.education-content .content .title i{
+.education-content .content .year i{
   padding-right: .5rem;
 }
