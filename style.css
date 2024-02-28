@@ -365,6 +365,16 @@ padding-bottom: 5rem;
 .education-column .education-box{
   border-left: .2rem solid var(--main-color);
 }
+.education-box .education-content::before{
+  content: "";
+  position: absolute;
+  bottom: 50;
+  height: 2rem;
+  width: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
 .education-box .education-content{
   padding-left: 2rem;
 }
