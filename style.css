@@ -368,6 +368,7 @@ padding-bottom: 5rem;
 .education-box .education-content{
   padding-left: 2rem;
 }
+
 .education-content .content{
   padding: .6rem;
   border: solid var(--main-color);
@@ -378,7 +379,6 @@ padding-bottom: 5rem;
 .education-content .content .year{
   font-size: 1.5rem;
   color: var(--main-color);
-  padding-bottom: .5rem;
 }
 .education-content .content .year i{
   padding-right: .5rem;
