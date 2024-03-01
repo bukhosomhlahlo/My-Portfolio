@@ -365,31 +365,80 @@ padding-bottom: 5rem;
 .education-column .education-box{
   border-left: .2rem solid var(--main-color);
 }
-.education-box .education-content::before{
-  content: "";
-  position: absolute;
-  bottom: 50;
-  height: 2rem;
-  width: 2rem;
-  background: var(--main-color);
-  border-radius: 50%;
-}
+
 
 .education-box .education-content{
   padding-left: 2rem;
 }
 
-.education-content .content{
-  padding: .6rem;
+.education-box .education-content::before{
+  content: "";
+  position: absolute;
+  bottom: 50;
+  height: 1rem;
+  width: 1rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  
+}
+.education-content .content {
+  padding: .2rem;
   border: solid var(--main-color);
   border-radius: .8rem;
   margin-bottom: 2rem;
   border-spacing: 1rem;
 }
 .education-content .content .year{
-  font-size: 1.5rem;
   color: var(--main-color);
 }
 .education-content .content .year i{
   padding-right: .5rem;
 }
+
+/* Contact Page */
+
+.contact .navbar{
+  margin-top: 2rem;
+  text-align: right;
+  background-color: #112e42;
+  border: .2rem solid var(--main-color);
+  margin-left: 47rem;
+  border-radius: 50px;
+  } 
+
+  
+.form {
+  background-color: var(--second-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #436781;
+}
+
