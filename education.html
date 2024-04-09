@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Bukho Somhlahlo Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,18 +11,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!--box-icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
 </head>
-<body>
-        <div class ="education2">
-            <nav class="navbar">
-                <a href="index.html" >Home</a>
-                <a href="about.html" >About</a>
-                <a href="education.html" class="active">Education</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contact</a>
-            </nav> 
-            <div class ="education" id="education">
+    <body>
+    <!--header design-->
+                <div class="navigation">
+                    <ul>
+                        <li class="list">
+                            <a href="index.html">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="text">Home</span>
+                                <span class="circle"></span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="about.html">
+                                <span class="icon">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </span>
+                                <span class="text">About</span>
+                                <span class="circle"></span>
+                            </a>
+                        </li>
+                        <li class="list active">
+                            <a href="education.html">
+                                <span class="icon">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </span>
+                                <span class="text">Education</span>
+                                <span class="circle"></span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="skills.html">
+                                <span class="icon">
+                                    <ion-icon name="construct-outline"></ion-icon>
+                                </span>
+                                <span class="text">Skills</span>
+                                <span class="circle"></span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="contact.html">
+                                <span class="icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </span>
+                                <span class="text">Contact</span>
+                                <span class="circle"></span>
+                            </a>
+                        </li>
+                        <div class="indicator"></div>
+                    </ul>
+                </div>
                 <h1 class="heading" style="text-align: center;">My <span>Journey</span></h1>
+            <div class ="education" id="education">
                 <div class="education-row">
                 <div class="education-column">
                         <h3 class="title">Education</h3>
@@ -56,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class="education-column">
+                <!-- <div class="education-column">
                     <h3 class="title">Experiance</h3>
                 <div class="education-box">
                     <div class="education-content">    
@@ -87,9 +134,22 @@
                             </div>
                         </div>
                 </div>
+            </div> -->
             </div>
             </div>
-            </div>
-        </div>                
+        </div>     
+        
+        <script>
+            const list = document.querySelectorAll('.list');
+     
+     function activeLink() {
+         list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+     }
+      
+     list.forEach((item) =>
+     item.addEventListener('click',activeLink));
+        </script>
 </body>
 </html>
